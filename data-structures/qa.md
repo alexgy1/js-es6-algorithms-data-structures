@@ -12,6 +12,32 @@
 
 - 数制转换
 - 括号匹配检查
+
+```js
+//思路：遍历字符串，  只有左括号就入栈  ， 是右括号就让栈里面的对应的，左括号出栈， 遍历结束后， 检查栈是否为空， 为空，正确， 反之不正确
+const answer = (s ，stack= []) => {
+       if(s.length %2 !==0 )return false //是奇数个 不用比了
+        const map = {
+            '(': ')',
+            '{': '}',
+            '[': ']'
+        }
+
+        for(var i of s){
+            if(map[i]){stack.push(i)} //是左括号 入栈
+            else {
+               //i是右括号  stack.pop()是左括号, map[stack.pop()] 是右括号， 两个不等 说明第一次入栈的是右括号， 或者不是左括号对应的右括号的情况 不符合要求
+
+                if(i != map[stack.pop()]) return false;
+            }
+        }
+        return !stack.length
+    }
+
+时间复杂度：O(N) 要遍历一遍
+空间复杂度：O(N) 要借助额外的栈
+```
+
 - 表达式求值
 
 ### 队列的应用案例
