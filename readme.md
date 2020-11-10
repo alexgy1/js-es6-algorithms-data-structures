@@ -231,3 +231,68 @@ free(p) 释放指针p所指变量的存储空间，就是彻底删除一个变�
 - wiki
 - 数据结构(c 语言版 第二版) 已读 245 页 /总数 883 页
 - 万能的互联网
+
+## leetcode
+
+- [stack](https://leetcode.com/tag/stack/) 61 problems.
+  20 Valid Parentheses 39.3% Easy
+  42 Trapping Rain Water 50.0% Hard
+  71 Simplify Path 33.2% Medium
+  84 Largest Rectangle in Histogram 36.0% Hard
+  85 Maximal Rectangle 38.7% Hard
+  94 Binary Tree Inorder Traversal 64.7% Medium
+  103 Binary Tree Zigzag Level Order Traversal 49.2% Medium
+  144 Binary Tree Preorder Traversal 56.6% Medium
+  145 Binary Tree Postorder Traversal 56.3% Medium
+  150 Evaluate Reverse Polish Notation 37.1% Medium
+  155 Min Stack 45.4% Easy
+  173 Binary Search Tree Iterator 58.0% Medium
+  224 Basic Calculator 37.6% Hard
+  225 Implement Stack using Queues 46.3% Easy
+  232 Implement Queue using Stacks 50.9% Easy
+  255 Verify Preorder Sequence in Binary Search Tree 45.9% Medium
+  272 Closest Binary Search Tree Value II 51.2% Hard
+  316 Remove Duplicate Letters 38.4% Medium
+  331 Verify Preorder Serialization of a Binary Tree 40.7% Medium
+  341 Flatten Nested List Iterator 53.7% Medium
+  385 Mini Parser 34.2% Medium
+  394 Decode String 51.1% Medium
+  402 Remove K Digits 28.5% Medium
+  439 Ternary Expression Parser 56.2% Medium
+  456 132 Pattern 30.4% Medium
+  496 Next Greater Element I 64.7% Easy
+  503 Next Greater Element II 57.4% Medium
+  591 Tag Validator 34.6% Hard
+  636 Exclusive Time of Functions 53.0% Medium
+  682 Baseball Game 65.1% Easy
+  726 Number of Atoms 50.9% Hard
+  735 Asteroid Collision 43.0% Medium
+  739 Daily Temperatures 64.0% Medium
+  770 Basic Calculator IV 54.6% Hard
+  772 Basic Calculator III 42.4% Hard
+  844 Backspace String Compare 46.7% Easy
+  856 Score of Parentheses 61.8% Medium
+  880 Decoded String at Index 24.5% Medium
+  895 Maximum Frequency Stack 61.8% Hard
+  901 Online Stock Span 60.8% Medium
+  907 Sum of Subarray Minimums 33.4% Medium
+  921 Minimum Add to Make Parentheses Valid 74.5% Medium
+  946 Validate Stack Sequences 63.1% Medium
+  975 Odd Even Jump 41.8% Hard
+  1003 Check If Word Is Valid After Substitutions 55.5% Medium
+  1063 Number of Valid Subarrays 71.4% Hard
+  1019 Next Greater Node In Linked List 58.2% Medium
+  1021 Remove Outermost Parentheses 78.5% Easy
+  1047 Remove All Adjacent Duplicates In String 69.6% Easy
+  1081 Smallest Subsequence of Distinct Characters 53.3% Medium
+  1124Longest Well-Performing Interval 33.0% Medium
+  1130 Minimum Cost Tree From Leaf Values 67.1% Medium
+  1190 Reverse Substrings Between Each Pair of Parentheses 63.8% Medium
+  1209 Remove All Adjacent Duplicates in String II 57.3% Medium
+  1249 Minimum Remove to Make Valid Parentheses 63.2% Medium
+  1381 Design a Stack With Increment Operation 75.9% Medium
+  1410 HTML Entity Parser 54.2% Medium
+  1441 Build an Array With Stack Operations 69.4% Easy
+  1541 Minimum Insertions to Balance a Parentheses String 41.8% Medium
+  1544 Make The String Great 54.8% Easy
+  1598 Crawler Log Folder

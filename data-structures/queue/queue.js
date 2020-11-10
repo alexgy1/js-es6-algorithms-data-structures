@@ -2,7 +2,7 @@
 class Queue {
   constructor() {
     this.data = [];
-    this.size = this.data.length;
+    this.size = 0;
   }
 
   peek() {
@@ -11,14 +11,16 @@ class Queue {
   }
   enQueue(e) {
     this.data.push(e);
+    this.size++;
   }
   deQueue() {
     if (this._isEmpty()) throw new Error("queue is empty");
+    this.size--;
     return this.data.shift();
   }
 
   _isEmpty() {
-    return this.zie === 0;
+    return this.size === 0;
   }
   _toSting() {
     console.log(this.data.toString());

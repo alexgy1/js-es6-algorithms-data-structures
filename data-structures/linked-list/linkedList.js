@@ -9,46 +9,68 @@ const Node = require("./node");
 // 单向链表的es6实现 带头节点和尾节点的单向链表
 class LinkedList {
   constructor() {
-    this.head = this.tail = null;
+    this.head = null;
+    this.length = 0;
   }
 
-  //add to end of list/tail 尾插法
+  //尾插法
   append(value) {
-    if (!this.tail) {
+    let node = new Node(value),
+      current;
+    if (this.length == 0) {
       //init
-      this.head = this.tail = new Node(value);
+      this.head = node;
     } else {
-      const newNode = new Node(value);
-      this.tail.next = newNode;
-      this.tail = newNode;
+      current = this.head;
+      //不为空
+      while (current.next) {
+        current = current.next;
+      }
+      //  最后节点next指向最后一个节点
+      current.next = node;
     }
+    this.length += 1;
+  }
+  toString() {
+    let res = "";
+    let current = this.head;
+
+    //这里是current即可
+    while (current) {
+      res += " " + current.value;
+      current = current.next;
+    }
+    return res;
   }
 
-  //add to beginning of list /head 头插法
-  prepend(value) {
-    if (!this.head) {
-      this.head = this.tail = new Node(value);
+  //头部 或者中间  或者最后
+  insert(position, data) {
+    //边界判断
+    if (position < 0 || position > this.length) return false;
+    let newNode = new Node(data);
+    //1. 往头部插入
+    if (position == 0) {
+      //新节点指向第一个元素
+      newNode.next = this.head;
+      this.head.next = newNode;
     } else {
-      let oldHead = this.head;
-      this.head = new Node(value);
-      this.head.next = oldHeads;
+      //2 position > 1 //也包含了从链表尾部插入的情况 画图就可以看出
+      let index = 0;
+      let current = this.head;
+      let prev = null; //需要引入prev变量 保证可以找到上一个节点
+      //先判断再加
+      while (index++ < position) {
+        prev = current;
+        current = current.next;
+      }
+      // = position
+      //新节点指定下一个节点
+      newNode.next = current;
+      //上一个节点 指定下一个节点是 newNode
+      prev.next = newNode;
     }
+    this.length += 1;
   }
-
-  deleteHead() {
-    if (!this.head) return null;
-    let removedHead = this.head;
-    //2个情况
-    //one element
-    if (this.head === this.tail) {
-      this.head = this.tail = null;
-    } else {
-      //TODO
-      //用了prev 所以找到head就是 当前head下一个的prev
-    }
-    return removedHead.value;
-  }
-  deleteTail() {}
 
   search(value) {
     let curNode = this.head;
@@ -59,3 +81,11 @@ class LinkedList {
     return curNode;
   }
 }
+
+let l = new LinkedList();
+
+// l.append(1);
+l.append(2);
+l.append(3);
+console.log(l);
+console.log(l.toString());
