@@ -296,3 +296,57 @@ free(p) 释放指针p所指变量的存储空间，就是彻底删除一个变�
   1541 Minimum Insertions to Balance a Parentheses String 41.8% Medium
   1544 Make The String Great 54.8% Easy
   1598 Crawler Log Folder
+
+## data structure
+
+- is a way in which data is stored on a computer
+- is a data organization management and storage format that enables efficient and modification.
+
+## the way of learning data structure
+
+1. Abstract/Logical View
+
+- ADTs are entitites that are definitions of data and operations but do not have implementation details.
+
+2. Implementation View
+
+## circlequeue
+
+## linked list
+
+- consists of nodes where each node contains a data field and a reference(link) to the next
+  node in the list
+- since they are not stored in a contiguous memmory locations
+
+> advantages of Linked List over Arrays
+
+- 1. Dynamic size
+- 2. Ease of insertion/deletion
+
+> Disadvantages of Linked List over Arrays
+
+- 1. Random access is not allowed. We have to access elements sequentially starting from the first node
+- 2. Extra memory space for a pointer is required with each element of the list
+- 3. Not cache friendly. Since array elements are contiguous locations, they is locality of reference which is not there in case of linked lists.
+
+> Options of linked list
+
+- traversing a linked list
+- append a new node
+- prepend a new node
+- insert a new node to a specific position in the list
+- delete a node
+- updating a node
+
+> type of linked list
+
+- singly linked list
+- doubly linked list
+- circular linked list
+
+> some applications of linked list data structure
+
+- implement Stacks Queues
+- implement Graphs
+- implement Hash Tables : Each bucket of the hash table can itself be a linked list
+- Undo functionality in ps or word. linked list of states
